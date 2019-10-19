@@ -163,7 +163,8 @@ class MainActivity : AppCompatActivity() {
         ).thenAccept {
             desertRenderable = ShapeFactory.makeCube(
                 desertDimensions,
-                SVector3(0f, 0f, 0f), it
+                SVector3(0f, 0f, 0f),
+                it
             )
         }
 
@@ -204,7 +205,7 @@ class MainActivity : AppCompatActivity() {
             this,
             componentData,
             componentRenderables[componentData.renderableName]!!, View.OnTouchListener { v, event ->
-                city.removeChild(node)
+                node.setParent(null)
                 greenness -= componentData.greenness
                 Log.i(TAG, "removed child")
                 true

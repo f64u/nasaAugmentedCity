@@ -321,7 +321,7 @@
     file: 'sampledata/models/flowers/flowers.fbx',
     name: 'flowers',
     recenter: 'root',
-    scale: 0.025556900000000005,
+    scale: 0.065556900000000005,
   },
   version: '0.54:2',
 }

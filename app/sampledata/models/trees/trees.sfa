@@ -331,7 +331,7 @@
     file: 'sampledata/models/trees/trees.gltf',
     name: 'trees',
     recenter: 'root',
-    scale: 0.00024609999999999997,
+    scale: 0.00104609999999999997,
   },
   version: '0.54:2',
 }

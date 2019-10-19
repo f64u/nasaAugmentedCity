@@ -12,9 +12,6 @@ import android.widget.Button
 import com.google.ar.sceneform.rendering.ViewRenderable
 import com.google.ar.sceneform.math.Vector3
 
-
-
-
 data class ComponentData(
     val displayName: String,
     val renderableName: String,
@@ -75,12 +72,12 @@ class Component(
             deleteCard = Node()
             deleteCard.setParent(this)
             deleteCard.isEnabled = false
-            deleteCard.localPosition = SVector3(0.0f, INFO_CARD_Y_POS_COEFF + this.localScale.y, 0.0f)
+            deleteCard.localPosition = SVector3(0.0f, 2f + this.localScale.y, 0.0f)
 
             val button = Button(context)
             button.text = "Delete"
-            button.width = (this.localScale.x * 0.6).toInt()
-            button.height = (this.localScale.z * 0.3).toInt()
+            button.width = 450
+            button.height = 300
             button.setOnTouchListener(onDelete)
 
             ViewRenderable.builder()
