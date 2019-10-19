@@ -1,0 +1,6 @@
+Coast_1261|ad/Coast_1261.png
+Coffee_Shop|ad/Coffee_Shop.png
+Factory_1|ad/Factory_1.png
+ModernHouse|ad/ModernHouse.png
+ParkingLot|ad/ParkingLot.png
+trees|ad/trees.png

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "22530962269",
+    "firebase_url": "https://nasabreakinggreen.firebaseio.com",
+    "project_id": "nasabreakinggreen",
+    "storage_bucket": "nasabreakinggreen.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:22530962269:android:70bca64fbad4f4cab76eb4",
+        "android_client_info": {
+          "package_name": "com.faddyy.breakinggreen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "22530962269-5eo0f98jugidv3dadqos1trn87k0m3vt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlg-sduAHO7b5XRUm2LrNp9n45U6qOqcY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "22530962269-5eo0f98jugidv3dadqos1trn87k0m3vt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
