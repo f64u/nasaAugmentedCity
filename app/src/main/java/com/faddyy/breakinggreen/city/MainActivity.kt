@@ -88,17 +88,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         sharedPreferences = getSharedPreferences(cityjson, Context.MODE_PRIVATE)
-//        sharedPreferences.edit()
-//            .putString(
-//                cityKey,
-//                gson.toJson(
-//                    listOf(
-//                        ComponentStored("Palace", Coordinates(0f, 0f)),
-//                        ComponentStored("Skyscraper", Coordinates(.3f, .3f))
-//                    )
-//                )
-//            )
-//            .commit()
+        sharedPreferences.edit()
+            .putString(
+                cityKey,
+                gson.toJson(
+                    listOf(
+                        ComponentStored("Palace", Coordinates(0f, 0f))
+                    )
+                )
+            )
+            .commit()
 
         if (intent.getBooleanExtra(LOAD_SAVED, false) && sharedPreferences.contains(cityKey)) {
             val runTimeType = object : TypeToken<List<ComponentStored>>() {}.type
@@ -143,10 +142,9 @@ class MainActivity : AppCompatActivity() {
             textView.setTextAppearance(R.style.TextAppearance_AppCompat_Caption)
             layout.addView(textView)
 
-            layout.setOnTouchListener { _, _->
+            layout.setOnClickListener {
                 showText("${value.displayName} chosen")
                 chosenComponent = value
-                true
             }
 
             componentsLayout.addView(layout)

@@ -79,7 +79,7 @@
   },
   samplers: [
     {
-      file: 'sampledata/models/Palace\\Palace_BaseColor.png',
+      file: 'sampledata/models/Palace/Palace_BaseColor.png',
       name: 'Palace_BaseColor',
       pipeline_name: 'Palace_BaseColor.png',
     },

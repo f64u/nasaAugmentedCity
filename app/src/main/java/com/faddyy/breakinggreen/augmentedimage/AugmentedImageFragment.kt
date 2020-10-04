@@ -39,6 +39,7 @@ class AugmentedImageFragment : ArFragment() {
         if (java.lang.Double.parseDouble(openGlVersionString) < MIN_OPENGL_VERSION) {
             Log.e(TAG, "Sceneform requires OpenGL ES 3.0 or later")
         }
+
     }
 
     override fun onCreateView(
@@ -57,6 +58,7 @@ class AugmentedImageFragment : ArFragment() {
         if (!setupAugmentedImageDatabase(config, session)) {
             Log.e(TAG, "Could not setup augmented image database")
         }
+        config.focusMode = Config.FocusMode.AUTO
         return config
     }
 
